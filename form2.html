@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <title>Store</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .edit{
+            background-color:#75c375 ;
+            border-radius:20px 20px;
+            border-bottom: none;
+            margin-right: 0;
+            color: white;
+            font-size: 14px;
+        }
+
+    </style>
+    <script src="jquery-2.2.3.min.js"></script>
+
+
+    <script type='text/javascript' src="bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".edit").click(function () {
+                $("#myModal").modal()
+            })
+            $("#btn_modal").click(function () {
+                input_user=$("#input_user_modal").val()
+                $("#myModal").modal("hide")
+                $(".ex2").alert("close")
+                $("#form_sgg").css("display","block")
+                $(".edit").css("display","none")
+                $(".brand_user").append('<li><span class="navbar-brand">'+input_user+'</span></li>')
+            })
+            $("#btn_send").click(function () {
+                var input = $("#input_id").val();
+                //console.log(input)
+                $(".list-group").append('<div class="list-group-item media">' + '<div class="pull-left">' +
+                    '<img src="male.png" height="30"></div>' + '<div class="media-body">' +
+                    '<h4 class="list-group-heading">'+input_user+'</h4>' + '<p class="list-group-text">' + input + '</p>' + '</div>' + '</div>')
+                $("#input_id").val("")
+            })
+
+        })
+
+    </script>
+    <script>
+
+    </script>
+</head>
+<body style="background: #f1f1f1">
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand">My store</span>
+        </div>
+        <div id="myNav" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="form2.html">Form</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right brand_user">
+                <!-- append user area -->
+            </ul>
+            <button class="btn  edit navbar-btn navbar-right btn-sm">Registry now</button>
+        </div>
+    </div>
+</nav><!-- end of nav-->
+<!-- begin modal-->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <strong>Login</strong>
+            </div>
+            <div class="modal-body">
+                <div class="well form-horizontal">
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="col-xs-2 control-label">Username</label>
+                            <div class="col-xs-10">
+                                <input id="input_user_modal" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-2 control-label">Password</label>
+                            <div class="col-xs-10">
+                                <input id="input_pwr_modal" type="password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xs-10 col-xs-offset-2">
+                            <button id="btn_modal" class="btn btn-info">Login</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> <!-- end modal area -->
+
+
+<div class="container-fluid"> <!-- alert area -->
+    <div class="row" style="margin-top: 55px">
+        <div class="alert alert-danger ex2 col-lg-12">
+            <h4>Please registry first to share us </h4>
+        </div>
+    </div> <!-- end alert area -->
+    <div class="row"> <!-- begin comment area -->
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-10">
+            <div class="list-group ">
+                <div class="list-group-item media">
+                    <div class="pull-left"><img src="male.png" height="30"></div>
+                    <div class="media-body"><h4 class="list-group-heading">Ahmed</h4>
+                        <p class="list-group-text">hello how are you</p></div>
+                </div>
+
+                <div class="list-group-item media">
+                    <div class="pull-left"><img src="male.png" height="30"></div>
+                    <div class="media-body"><h4 class="list-group-heading">Omer</h4>
+                        <p class="list-group-text">I am fine</p></div>
+                </div>
+            </div>
+            <div class="form-group" id="form_sgg" style="display: none">
+                <label class="col-xs-2 control-label">Your suggestion</label>
+                <textarea type="text" id="input_id" class="form-control" ></textarea>
+                <button class="btn btn-success form-control" id="btn_send" style="margin-top: 20px">Send</button>
+
+            </div>
+        </div>
+        <div class="col-lg-1">
+
+        </div>  <!-- end of comment area -->
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
