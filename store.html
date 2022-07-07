@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Form</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         .badge-notify{
             background: red;
@@ -13,28 +13,7 @@
             cursor:pointer ;
         }
     </style>
-    <script src="jquery-2.2.3.min.js"></script>
-    <script src="jquery.mycart.js"></script>
-    <script src="cart.js"></script>
-    <script type='text/javascript' src="bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#cloth,#food").css("display","none")
-            $("#mytab ul li:first").click(function () {
-                $("#elect,#cloth,#food").css("display","none")
-                $("#elect").fadeIn(1000)
-            })
-            $("#mytab ul li:eq(1)").click(function () {
-                $("#elect,#cloth,#food").css("display","none")
-                $("#cloth").fadeIn(1000)
-            })
-            $("li:last").click(function () {
-                $("#elect,#cloth,#food").css("display","none")
-                $("#food").fadeIn(1000)
-            })
-
-        });
-    </script>
+    
 </head>
 <body style="background: #f1f1f1">
 <nav class="navbar navbar-inverse navbar-fixed-top" >
@@ -56,7 +35,7 @@
 
             </ul>
 
-            <span class="navbar-brand my-cart-icon" ><img src="Shopping.png" height="20">
+            <span class="navbar-brand my-cart-icon" ><img src="imgs/Shopping.png" height="20">
                     <span class="badge badge-notify my-cart-badge"></span>
                 </span>
                 
@@ -109,31 +88,31 @@
             <div id="elect" class="row"> <!-- begin tab1 -->
                 <div class="thumbnail  col-lg-3 col-md-4 col-sm-6 col-xs-6">
                     <!-- if you want fov icon  <div style="right:100%"><img src="up.png" style="width: 20px;height: 30px;"></div>-->
-                    <a> <img src="wall/1-1.jpg"  style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/1-1.jpg"  style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="1" data-name="product 1" data-
                             summary="summary 1" data-price="20" data-quantity="1"
-                            data-image="wall/1-1.jpg">Add to Basket</button>
+                            data-image="imgs/1-1.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/1-2.png" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/1-2.png" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success" >buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="2" data-name="product 2" data-
                             summary="summary 2" data-price="1000" data-quantity="1"
-                            data-image="wall/1-2.png">Add to Basket</button>
+                            data-image="imgs/1-2.png">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/1-3.png" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/1-3.png" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="3" data-name="product 3" data-
                             summary="summary 3" data-price="500" data-quantity="1"
-                            data-image="wall/1-3.png">Add to Basket</button>
+                            data-image="imgs/1-3.png">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/1-4.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/1-4.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="4" data-name="product 4" data-
@@ -141,7 +120,7 @@
                             data-image="wall/1-4.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/1-5.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/1-5.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="5" data-name="product 5" data-
@@ -149,79 +128,79 @@
                             data-image="wall/1-5.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/1-6.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/1-6.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="6" data-name="product 6" data-
                             summary="summary 6" data-price="300" data-quantity="1"
-                            data-image="wall/1-6.jpg">Add to Basket</button>
+                            data-image="imgs/1-6.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/1-7.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/1-7.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="7" data-name="product 7" data-
                             summary="summary 7" data-price="350" data-quantity="1"
-                            data-image="wall/1-7.jpg">Add to Basket</button>
+                            data-image="imgs/1-7.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/1-8.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/1-8.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="8" data-name="product 8" data-
                             summary="summary 8" data-price="400" data-quantity="8"
-                            data-image="wall/1-8.jpg">Add to Basket</button>
+                            data-image="imgs/1-8.jpg">Add to Basket</button>
                 </div>
             </div> <!-- end of tab1 -->
 
             <div id="cloth" class="row"> <!-- begin tab2 -->
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/2-1.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/2-1.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="9" data-name="product 9" data-
                             summary="summary 1" data-price="50" data-quantity="1"
-                            data-image="wall/2-1.jpg">Add to Basket</button>
+                            data-image="imgs/2-1.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/2-2.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/2-2.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="10" data-name="product 10" data-
                             summary="summary 10" data-price="100" data-quantity="1"
-                            data-image="wall/2-2.jpg">Add to Basket</button>
+                            data-image="imgs/2-2.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/2-3.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/2-3.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="11" data-name="product 11" data-
                             summary="summary 11" data-price="120" data-quantity="1"
-                            data-image="wall/2-3.jpg">Add to Basket</button>
+                            data-image="imgs/2-3.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/2-4.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/2-4.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="12" data-name="product 12" data-
                             summary="summary 12" data-price="150" data-quantity="1"
-                            data-image="wall/2-4.jpg">Add to Basket</button>
+                            data-image="imgs/2-4.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/2-5.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/2-5.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="13" data-name="product 13" data-
                             summary="summary 13" data-price="180" data-quantity="1"
-                            data-image="wall/2-5.jpg">Add to Basket</button>
+                            data-image="imgs/2-5.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <a> <img src="wall/2-6.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/2-6.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="14" data-name="product 14" data-
                             summary="summary 14" data-price="200" data-quantity="1"
-                            data-image="wall/2-6.jpg">Add to Basket</button>
+                            data-image="imgs/2-6.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
                     <a> <img src="wall/2-7.jpg" style="width: 150px;height: 200px"></a>
@@ -291,7 +270,7 @@
                     data-image="wall/3-6.png">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3">
-                    <a> <img src="wall/food1.jpg" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/food1.jpg" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="24" data-name="product 24" data-
@@ -299,7 +278,7 @@
                     data-image="wall/food1.jpg">Add to Basket</button>
                 </div>
                 <div class="thumbnail col-lg-3">
-                    <a> <img src="wall/3-8.png" style="width: 150px;height: 200px"></a>
+                    <a> <img src="imgs/3-8.png" style="width: 150px;height: 200px"></a>
                     <p>price 300$</p>
                     <button type="button" class="btn btn-success">buy</button>
                     <button type="button" class="btn btn-info my-cart-btn" data-id="25" data-name="product 25" data-
@@ -311,5 +290,27 @@
         </div>
     </div>
 </div>
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="s/jquery.mycart.js"></script>
+    <script src="s/cart.js"></script>
+    <script type='text/javascript' src="s/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#cloth,#food").css("display","none")
+            $("#mytab ul li:first").click(function () {
+                $("#elect,#cloth,#food").css("display","none")
+                $("#elect").fadeIn(1000)
+            })
+            $("#mytab ul li:eq(1)").click(function () {
+                $("#elect,#cloth,#food").css("display","none")
+                $("#cloth").fadeIn(1000)
+            })
+            $("li:last").click(function () {
+                $("#elect,#cloth,#food").css("display","none")
+                $("#food").fadeIn(1000)
+            })
+
+        });
+    </script>
 </body>
 </html>

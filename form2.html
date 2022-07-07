@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Store</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         .edit{
             background-color:#75c375 ;
@@ -14,39 +14,7 @@
         }
 
     </style>
-    <script src="jquery-2.2.3.min.js"></script>
-
-
-    <script type='text/javascript' src="bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-
-            $(".edit").click(function () {
-                $("#myModal").modal()
-            })
-            $("#btn_modal").click(function () {
-                input_user=$("#input_user_modal").val()
-                $("#myModal").modal("hide")
-                $(".ex2").alert("close")
-                $("#form_sgg").css("display","block")
-                $(".edit").css("display","none")
-                $(".brand_user").append('<li><span class="navbar-brand">'+input_user+'</span></li>')
-            })
-            $("#btn_send").click(function () {
-                var input = $("#input_id").val();
-                //console.log(input)
-                $(".list-group").append('<div class="list-group-item media">' + '<div class="pull-left">' +
-                    '<img src="male.png" height="30"></div>' + '<div class="media-body">' +
-                    '<h4 class="list-group-heading">'+input_user+'</h4>' + '<p class="list-group-text">' + input + '</p>' + '</div>' + '</div>')
-                $("#input_id").val("")
-            })
-
-        })
-
-    </script>
-    <script>
-
-    </script>
+    
 </head>
 <body style="background: #f1f1f1">
 <nav class="navbar navbar-inverse navbar-fixed-top" >
@@ -120,13 +88,13 @@
         <div class="col-lg-10">
             <div class="list-group ">
                 <div class="list-group-item media">
-                    <div class="pull-left"><img src="male.png" height="30"></div>
+                    <div class="pull-left"><img src="imgs/male.png" height="30"></div>
                     <div class="media-body"><h4 class="list-group-heading">Ahmed</h4>
                         <p class="list-group-text">hello how are you</p></div>
                 </div>
 
                 <div class="list-group-item media">
-                    <div class="pull-left"><img src="male.png" height="30"></div>
+                    <div class="pull-left"><img src="imgs/male.png" height="30"></div>
                     <div class="media-body"><h4 class="list-group-heading">Omer</h4>
                         <p class="list-group-text">I am fine</p></div>
                 </div>
@@ -146,6 +114,35 @@
 </div>
 
 
+<script src="jquery-2.2.3.min.js"></script>
 
+
+    <script type='text/javascript' src="bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".edit").click(function () {
+                $("#myModal").modal()
+            })
+            $("#btn_modal").click(function () {
+                input_user=$("#input_user_modal").val()
+                $("#myModal").modal("hide")
+                $(".ex2").alert("close")
+                $("#form_sgg").css("display","block")
+                $(".edit").css("display","none")
+                $(".brand_user").append('<li><span class="navbar-brand">'+input_user+'</span></li>')
+            })
+            $("#btn_send").click(function () {
+                var input = $("#input_id").val();
+                //console.log(input)
+                $(".list-group").append('<div class="list-group-item media">' + '<div class="pull-left">' +
+                    '<img src="male.png" height="30"></div>' + '<div class="media-body">' +
+                    '<h4 class="list-group-heading">'+input_user+'</h4>' + '<p class="list-group-text">' + input + '</p>' + '</div>' + '</div>')
+                $("#input_id").val("")
+            })
+
+        })
+
+    </script>
 </body>
 </html>
